@@ -124,14 +124,14 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "ee",
       "kebab-case"
     ],
     "angular-whitespace": [true, "check-interpolation"],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
+    // "use-host-property-decorator": false, //enable it whenever possible
     "no-input-rename": true,
     "no-output-rename": true,
     "use-life-cycle-interface": true,
