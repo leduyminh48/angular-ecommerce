@@ -4,6 +4,7 @@
   ],
   "rules": {
     "arrow-return-shorthand": true,
+    "arrow-parens": [true, "ban-single-arg-parens"],
     "callable-types": true,
     "class-name": true,
     "comment-format": [
@@ -34,10 +35,14 @@
       true,
       {
         "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
+          "public-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "private-instance-field",
+          "public-static-method",
+          "private-static-method",
+          "public-instance-method",
+          "private-instance-method"
         ]
       }
     ],
@@ -118,7 +123,7 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "ee",
       "camelCase"
     ],
     "component-selector": [
@@ -131,7 +136,7 @@
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
-    // "use-host-property-decorator": false, //enable it whenever possible
+    "use-host-property-decorator": false,
     "no-input-rename": true,
     "no-output-rename": true,
     "use-life-cycle-interface": true,
