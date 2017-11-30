@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'ee-navbar',
@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @Output() public toggleSidenav: EventEmitter<void> = new EventEmitter();
+
   constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit() {}
+
+  public onMenuClick() {
+    this.toggleSidenav.emit();
+  }
 }

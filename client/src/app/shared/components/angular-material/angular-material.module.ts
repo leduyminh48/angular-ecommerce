@@ -5,24 +5,28 @@ import {
   MatCheckboxModule,
   MatDatepickerModule,
   MatGridListModule,
+  MatIconModule,
   MatInputModule,
   MatListModule,
   MatSelectModule,
   MatSidenavModule,
 } from '@angular/material';
 
+const modules = [
+  MatButtonModule,
+  MatCheckboxModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatSidenavModule,
+  MatListModule,
+  MatGridListModule,
+  MatSelectModule,
+  MatIconModule,
+];
+
 @NgModule({
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatSidenavModule,
-    MatListModule,
-    MatGridListModule,
-    MatSelectModule,
-  ],
+  imports: [CommonModule, ...modules],
+  exports: [...modules],
   declarations: [],
 })
 export class AngularMaterialModule {}

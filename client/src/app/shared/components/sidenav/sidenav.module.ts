@@ -6,5 +6,6 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 @NgModule({
   imports: [CommonModule, AngularMaterialModule],
   declarations: [SidenavComponent],
+  exports: [SidenavComponent],
 })
 export class SidenavModule {}
