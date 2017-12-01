@@ -4,5 +4,6 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   imports: [CommonModule],
   declarations: [],
+  providers: [],
 })
 export class ServicesModule {}
