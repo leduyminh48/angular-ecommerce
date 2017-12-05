@@ -4,6 +4,7 @@
   "private": true,
   "description": "",
   "scripts": {
+    "deploy": "npm run build:client && firebase deploy",
     "build:client": "cd ./client && npm run build",
     "lint:client": "cd ./client && npm run lint",
     "start": "cd ./client && npm start",
